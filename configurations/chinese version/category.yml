@@ -1,0 +1,31 @@
+# You can find the english version example file in GitHub or spigotmc.org
+
+# 该类别的唯一识别id，请勿重复，在gui/category文件夹中的文件名也必须与此相同
+default:
+  # 是否在主页面中显示该分类
+  show: true
+  # 这里写类别显示在mainUI上的物品样式
+  icon:
+    name: "&6默认分类"
+    material: WOODEN_SWORD
+    custom-model-data: 10001
+    shiny: true
+    lore:
+      - "&7这是一个默认分类"
+  reward:
+    content: |-
+      command inline "give {{ sender }} diamond 1"
+      tell color inline "&a你解鎖了 &e{{ &entry }} &a條目"
+
+test:
+  show: true
+  icon:
+    name: "&6测试分类"
+    material: WOODEN_AXE
+    custom-model-data: 10001
+    lore:
+      - "&7这是一个示例分类"
+  reward:
+    content: |-
+      command inline "give {{ sender }} diamond 1"
+      tell color inline "&a你解鎖了 &e{{ &entry }} &a條目"

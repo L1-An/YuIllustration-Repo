@@ -1,0 +1,377 @@
+# Translate By ChatGPT, please forgive me for any mistakes
+# If you would like to contribute to the translation, please contact me or pull request on GitHub
+
+command-reload: "&3Yu&bIllustration &7| &aReload successful!"
+command-not-player: "&3Yu&bIllustration &7| &cThis command can only be executed by players!"
+load-category: "&3Yu&bIllustration &7| &aSuccessfully loaded &e{0} &acategories!" # {0} number of categories
+load-entry: "&3Yu&bIllustration &7| &aSuccessfully loaded &e{0} &aentries!" # {0} number of entries
+match-type: "&3Yu&bIllustration &7| &aThe item name's match type: &e{0}" # {0} match type
+
+player-not-found: "&3Yu&bIllustration &7| &cPlayer not found: &e{0} &c!" # {0} player name
+player-get-unlock-card: "&3Yu&bIllustration &7| &aSuccessfully obtained &e{0} &acategory's &e{1} &aentry's unlock card!" # {0} category name {1} entry name
+
+category-file-not-found: "&3Yu&bIllustration &7| &cCategory &e{0} &c's UI file not found! A default UI file has been automatically created in the gui/category folder" # {0} category name
+category-not-found: "&3Yu&bIllustration &7| &cCategory not found: &e{0} &c!" # {0} category name
+
+entry-unlock: "&3Yu&bIllustration &7| &e{0} &acategory's &e{1} &aentry unlocked!" # {0} category name {1} entry name
+entry-deunlock: "&3Yu&bIllustration &7| &e{0} &acategory's &e{1} &aentry deunlocked!" # {0} category name {1} entry name
+entry-already-unlock: "&3Yu&bIllustration &7| &e{0} &ccategory's &e{0} &centry already unlocked!" # {0} category name {1} entry name
+entry-not-unlock: "&3Yu&bIllustration &7| &e{0} &ccategory's &e{1} &centry not unlocked!" # {0} category name {1} entry name
+entry-not-found: "&3Yu&bIllustration &7| &cEntry not found in &e{0} &ccategory: &e{1} &c!" # {0} category name {1} entry name
+
+api-file-createui-success: "&3Yu&bIllustration &7| &aUI file for category &e{0} &asuccessfully created" # {0} category name
+api-file-createui-exists: "&3Yu&bIllustration &7| &cUI file for category &e{0} &calready exists! Creation cancelled!" # {0} category name
+
+# Language file for the editor
+
+editor-main-title: "&0Editor Main Page"
+editor-previous-page: "&aPrevious Page"
+editor-no-previous-page: "&cNo Previous Page"
+editor-next-page: "&aNext Page"
+editor-no-next-page: "&cNo Next Page"
+editor-back: "&aBack"
+editor-back-lore:
+  - "&aClick to return to the previous page"
+editor-delete: "&cDelete"
+editor-delete-lore:
+  - "&cClick to delete"
+  - "&cCannot be recovered after deletion!"
+editor-delete-lore-category:
+  - " "
+  - "&cThis will delete all entries under this category!"
+editor-delete-success: "&3Yu&bIllustration &7| &aSuccessfully deleted &e{0} &a!" # {0} content deleted
+no-match-item: "&3Yu&bIllustration &7| &cNo matching item found!"
+
+editor-create-category: "&aCreate New Category"
+editor-create-category-lore:
+  - "&aClick to create a new category"
+  - "&aA corresponding UI file will be automatically created"
+editor-create-category-sign:
+  - " "
+  - "&aEnter the category name on the first line"
+  - "&cIt is recommended to use English"
+  - "&aClick finish after entering to create"
+editor-category-icon-default-lore:
+  - "&aClick to enter editing"
+editor-create-category-success: "&3Yu&bIllustration &7| &aSuccessfully created new category: &e{0}" # {0} category name
+editor-create-category-failed:
+  - "&3Yu&bIllustration &7| &cCategory &e{0} &calready exists or input is empty!" # {0} category name
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&nClick here] &ato reopen the editing interface"
+    args:
+      - hover: "&aReopen the editing interface"
+        command: "/yuillustration edit"
+
+editor-category-title: "&0Edit Category: &e{0}" # {0} category name
+editor-category-edit-name: "&aEdit Category Icon"
+editor-category-edit-lore:
+  - "&aClick to edit the category icon"
+editor-create-entry: "&aCreate New Entry"
+editor-create-entry-lore:
+  - "&aClick to create a new entry"
+editor-create-entry-sign:
+  - " "
+  - "Enter the entry name on the first line"
+  - "It is recommended to use English"
+  - "Click finish after entering to create"
+editor-entry-icon-default-lore:
+  - "&aClick to enter editing"
+editor-create-entry-success: "&3Yu&bIllustration &7| &aSuccessfully created new entry: &e{0}" # {0} entry name
+editor-create-entry-failed:
+  - "&3Yu&bIllustration &7| &cEntry &e{0} &calready exists or input is empty!" # {0} entry name
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&nClick here] &ato reopen the editing interface"
+    args:
+      - hover: "&aReopen the editing interface"
+        command: "/yuillustration edit category {1}"
+category-reward-name: "&aCategory Reward Script"
+category-reward-lore:
+  - "&aClick to edit"
+  - "&bWhen complete the category, the reward script will be executed"
+category-reward-hint: "&3Yu&bIllustration &7| &aEnter the new reward script in the book"
+category-reward-book-name: "&aModify Script Content: &e{0}" # {0} category name
+
+# Entry editing interface
+editor-entry-title: "&0Edit Entry: &e{0}" # {0} entry name
+
+# Category icon editing interface
+editor-category-icon-title: "&0Edit &e{0} &0Category Icon" # {0} category name
+# Edit icon material
+editor-icon-edit-material-name: "&aCurrent Material: {0}" # {0} material name
+editor-icon-edit-material-lore:
+  - "&aClick to edit the icon material"
+editor-icon-edit-material-hint: "&3Yu&bIllustration &7| &aEnter the new icon material"
+editor-icon-edit-material-failed:
+  - "&3Yu&bIllustration &7| &cNo matching item found!"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&nClick here] &ato reopen the editing interface"
+    args:
+      - hover: "&aReopen the editing interface"
+        command: "/yuillustration edit category icon {0}"
+# Edit icon name
+editor-icon-edit-name-name: "&aCurrent Name: {0}" # {0} icon name
+editor-icon-edit-name-lore:
+  - "&aClick to edit the icon name"
+editor-icon-edit-name-hint: "&3Yu&bIllustration &7| &aEnter the new icon name"
+# Edit icon lore
+editor-icon-edit-lore-name: "&aEdit Icon Description"
+editor-icon-edit-lore-empty:
+  - "&aCurrent lore is empty"
+  - "&aClick to edit the icon description"
+editor-icon-edit-lore-hint: "&3Yu&bIllustration &7| &aEnter the new icon description in the book"
+editor-icon-edit-lore-book-name: "&aModify Description: &e{0}" # {0} icon name
+# Edit icon shiny status
+editor-icon-edit-shiny-name: "&aIcon Shiny Status: {0}"
+editor-icon-edit-shiny-lore:
+  - "&aClick to toggle the icon's shiny status"
+# Edit icon CustomModelData
+editor-icon-edit-cmd-name: "&aIcon's CustomModelData: {0}" # {0} CustomModelData
+editor-icon-edit-cmd-lore:
+  - "&aClick to edit the icon's CustomModelData"
+editor-icon-edit-cmd-hint: "&3Yu&bIllustration &7| &aEnter the new CustomModelData, must be a non-negative number!"
+editor-icon-edit-cmd-failed:
+  - "&3Yu&bIllustration &7| &e{0} &cis not a valid CustomModelData!" # {0} entered CustomModelData
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&nClick here] &ato reopen the editing interface"
+    args:
+      - hover: "&aReopen the editing interface"
+        command: "/yuillustration edit category icon {1}" # Do not modify this command
+editor-entry-icon-edit-cmd-failed:
+  - "&3Yu&bIllustration &7| &e{0} &cis not a valid CustomModelData!" # {0} entered CustomModelData
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&nClick here] &ato reopen the editing interface"
+    args:
+      - hover: "&aReopen the editing interface"
+        command: "/yuillustration edit entry {1} {2}" # Do not modify this command
+# Edit icon show status
+editor-icon-edit-show-name: "&aIcon Show Status: {0}"
+editor-icon-edit-show-lore:
+  - "&aClick to toggle the icon's show status"
+# Edit entry category
+editor-entry-category-title: "&0Edit &e{0} &0Category" # {0} entry name
+editor-icon-edit-category-name: "&aCategory: {0}" # {0} category name
+editor-icon-edit-category-lore:
+  - "&aClick to edit the icon's category"
+editor-icon-edit-category-add-lore:
+  - "&aClick to switch the icon to this category"
+# Edit entry reward information
+editor-entry-reward-title: "&0Edit &e{0} &0Reward" # {0} entry name
+editor-icon-edit-reward-name: "&aEdit Entry Reward"
+editor-icon-edit-reward-lore:
+  - "&aClick to edit the icon's reward information"
+# Edit entry unlock information
+editor-entry-unlock-title: "&0Edit &e{0} &0Unlock Conditions" # {0} entry name
+editor-icon-edit-unlock-name: "&aEdit Entry Unlock Conditions"
+editor-icon-edit-unlock-lore:
+  - "&aClick to edit the icon's unlock conditions"
+# Edit entry reward script information
+editor-entry-reward-script-name: "&aEdit Entry Reward-Script"
+editor-entry-reward-script-lore:
+  - "&aClick to edit"
+  - "&aCurrent script:"
+  - " "
+editor-entry-reward-script-hint: "&3Yu&bIllustration &7| &aEnter the new reward script in the book"
+editor-entry-reward-script-book-name: "&aModify Script Content: &e{0}" # {0} entry name
+# Edit entry reward compatibility information
+editor-entry-reward-compat-title: "&0Edit &e{0} &0Other Plugin Supported Rewards" # {0} entry name
+editor-entry-reward-compat-name: "&aEdit Entry Reward-Other Plugin Supported Rewards"
+editor-entry-reward-compat-lore:
+  - "&aClick to edit the entry's other plugin supported rewards"
+# Edit entry reward compatibility-MMOCore
+editor-entry-reward-compat-mmocore-title: "&0Edit &e{0} &0MMOCore Reward" # {0} entry name
+editor-entry-reward-compat-mmocore-name: "&aEdit Entry Reward-MMOCore"
+editor-entry-reward-compat-mmocore-lore:
+  - "&aClick to edit the entry's MMOCore attribute reward"
+  - "&aUnlocking this entry will provide a certain amount of MMOCore attribute as a reward"
+# Edit entry reward compatibility-MMOCore hooked status
+editor-entry-reward-compat-mmocore-check-name: "&eMMOCore&a Hook Status: {0}" # {0} whether hooked
+editor-entry-reward-compat-mmocore-check-lore-exists:
+  - "&aHooked, this function is enabled"
+editor-entry-reward-compat-mmocore-check-lore-not-exists:
+  - "&cNot hooked, this function is disabled"
+  - "&cInstall &eMMOCore &cto enable this function"
+# Edit entry reward compatibility-MMOCore enable status
+editor-entry-reward-compat-mmocore-enable-name: "&aMMOCore Reward Status: {0}" # {0} whether enabled
+editor-entry-reward-compat-mmocore-enable-lore:
+  - "&aClick to toggle the MMOCore reward status"
+# Edit entry reward compatibility-MMOCore attribute name
+editor-entry-reward-compat-mmocore-attribute-name: "&aCurrent Attribute Name: {0}" # {0} attribute name
+editor-entry-reward-compat-mmocore-attribute-lore:
+  - "&aClick to edit the entry's MMOCore attribute name"
+editor-entry-reward-compat-mmocore-attribute-hint: "&3Yu&bIllustration &7| &aEnter the new MMOCore attribute name"
+# Edit entry reward compatibility-MMOCore attribute value
+editor-entry-reward-compat-mmocore-amount-name: "&aCurrent Attribute Value: {0}" # {0} attribute value
+editor-entry-reward-compat-mmocore-amount-lore:
+  - "&aClick to edit the entry's MMOCore attribute value"
+editor-entry-reward-compat-mmocore-amount-hint: "&3Yu&bIllustration &7| &aEnter the new MMOCore attribute value, must be a non-negative number greater than 0!"
+editor-entry-reward-compat-mmocore-amount-failed:
+  - "&3Yu&bIllustration &7| &e{0} &cis not a valid MMOCore attribute value!" # {0} entered MMOCore attribute value
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&nClick here] &ato reopen the editing interface"
+    args:
+      - hover: "&aReopen the editing interface"
+        command: "/yuillustration edit entry {1} {2} reward compat mmocore" # Do not modify this command
+# Editor Entry Reward Compatibility - MythicLib
+editor-entry-reward-compat-mythiclib-title: "&0Edit &e{0} &0's MythicLib Reward" # Edit the MythicLib reward for {0}
+editor-entry-reward-compat-mythiclib-name: "&aEdit Entry Reward - MythicLib"
+editor-entry-reward-compat-mythiclib-lore:
+  - "&aClick to edit the MythicLib attribute rewards of the entry"
+  - "&aUpon unlocking the entry, a certain amount of MythicLib attribute values will be provided as a reward"
+# Editor Entry Reward Compatibility - MythicLib Compatible
+editor-entry-reward-compat-mythiclib-check-name: "&eMythicLib&a Hook Status: {0}" # MythicLib Hook Status: {0}
+editor-entry-reward-compat-mythiclib-check-lore-exists:
+  - "&aHooked, the feature is enabled"
+editor-entry-reward-compat-mythiclib-check-lore-not-exists:
+  - "&cNot hooked, the feature is disabled"
+  - "&cPlease install &eMythicLib &c to enable this feature"
+# Editor Entry Reward Compatibility - MythicLib Enable Status
+editor-entry-reward-compat-mythiclib-enable-name: "&aMythicLib Reward Status: {0}" # MythicLib Reward Status: {0}
+editor-entry-reward-compat-mythiclib-enable-lore:
+  - "&aClick to toggle the MythicLib reward status"
+# Editor Entry Reward Compatibility - MythicLib Attribute Name
+editor-entry-reward-compat-mythiclib-attribute-name: "&aCurrent Attribute Name: {0}" # Current Attribute Name: {0}
+editor-entry-reward-compat-mythiclib-attribute-lore:
+  - "&aClick to edit the MythicLib attribute name of the entry"
+editor-entry-reward-compat-mythiclib-attribute-hint: "&3Yu&bIllustration &7| &aEnter the new MythicLib attribute name"
+# Editor Entry Reward Compatibility - MythicLib Attribute Value
+editor-entry-reward-compat-mythiclib-amount-name: "&aCurrent Attribute Value: {0}" # Current Attribute Value: {0}
+editor-entry-reward-compat-mythiclib-amount-lore:
+  - "&aClick to edit the MythicLib attribute value of the entry"
+editor-entry-reward-compat-mythiclib-amount-hint: "&3Yu&bIllustration &7| &aPlease enter a new MythicLib attribute value, must be a non-negative number greater than 0!"
+editor-entry-reward-compat-mythiclib-amount-failed:
+  - "&3Yu&bIllustration &7| &e{0} &c is not a valid MythicLib attribute value!"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&nClick here] &a to reopen the edit interface"
+    args:
+      - hover: "&aReopen the edit interface"
+        command: "/yuillustration edit entry {1} {2} reward compat mythiclib" # Do not modify this command
+# Edit entry unlock condition type
+editor-entry-unlock-type-name: "&aCurrent Unlock Type: {0}" # {0} unlock type
+editor-entry-unlock-type-lore:
+  - "&aCurrent entry unlock type:"
+  - "{0}NONE - No unlock required"
+  - "{1}ITEM - Unlock by picking up an item"
+  - "{2}EVENT - Unlock by triggering a corresponding event"
+  - "{3}BOTH - Both conditions must be met to unlock"
+# Edit entry unlock condition-item
+editor-entry-unlock-item-title: "&0Edit &e{0} &0Unlock Condition-Item" # {0} entry name
+editor-entry-unlock-item-name: "&aEdit Entry Unlock Condition-Item"
+editor-entry-unlock-item-lore:
+  - "&aClick to edit the entry's unlock condition-item"
+  - "&aUnlocking this entry requires picking up the corresponding item"
+# Edit entry unlock condition-item name
+editor-entry-unlock-item-name-name: "{0}" # {0} item name
+editor-entry-unlock-item-name-lore:
+  - "&aClick to edit the item name"
+editor-entry-unlock-item-name-hint: "&3Yu&bIllustration &7| &aEnter the new item name"
+# Edit entry unlock condition-item lore
+editor-entry-unlock-item-lore-name: "&aEdit Item Lore"
+editor-entry-unlock-item-lore-empty:
+  - "&aCurrent lore is empty"
+  - "&aClick to edit the icon description"
+editor-entry-unlock-item-lore-hint: "&3Yu&bIllustration &7| &aEnter the new item lore in the book"
+editor-entry-unlock-item-lore-book: "&aModify Item Unlock Condition Description: &e{0}" # {0} icon name
+editor-entry-unlock-item-consume-name: "&aItem Consume Status: {0}" # {0} whether consumed
+editor-entry-unlock-item-consume-lore:
+  - "&aClick to toggle the item's consume status"
+# Edit entry unlock condition-event
+editor-entry-unlock-event-title: "&0Edit &e{0} &0Unlock Condition-Event" # {0} entry name
+editor-entry-unlock-event-name: "&aEdit Entry Unlock Condition-Event"
+editor-entry-unlock-event-lore:
+  - "&aClick to edit the entry's unlock condition-event"
+  - "&aUnlocking this entry requires triggering the corresponding event"
+# Edit entry unlock condition-event type
+editor-entry-unlock-event-type-name: "&aCurrent Event Type: {0}" # {0} event type
+editor-entry-unlock-event-type-lore:
+  - "&aClick to edit the event type"
+editor-entry-unlock-event-type-hint:
+  - "&3Yu&bIllustration &7| &aPlease enter a new event type, the current type is: {0}" # {0} Event type
+  - "&3Yu&bIllustration &7| &aEnter the new event type, current types include:"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&bplayer_join]&a: Player Join Event"
+    args:
+      - hover: "&7Click to copy"
+        suggest: "player_join"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&bplayer_quit]&a: Player Quit Event"
+    args:
+      - hover: "&7Click to copy"
+        suggest: "player_quit"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&bentity_kill]&a: Entity Death Event (Killing a Monster Event)"
+    args:
+      - hover: "&7Click to copy"
+        suggest: "entity_kill"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&bwaystone_active]&a: Waystone Activation Event"
+    args:
+      - hover: "&7Click to copy"
+        suggest: "waystone_active"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&bcraft_item]&a: Craft Item Event"
+    args:
+      - hover: "&7Click to copy"
+        suggest: "craft_item"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&binteract_item]&a: Interact Item Event"
+    args:
+      - hover: "&7Click to copy"
+        suggest: "interact_item"
+editor-entry-unlock-event-type-failed:
+  - "&3Yu&bIllustration &7| &e{0} &cis not a valid event type!" # {0} entered event type
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&nClick here] &ato reopen the editing interface"
+    args:
+      - hover: "&aReopen the editing interface"
+        command: "/yuillustration edit entry {1} {2} unlock event" # Do not modify this command
+# Edit entry unlock condition-event-entity information
+editor-entry-unlock-event-entity-title: "&0Edit &e{0} &0Unlock Condition-Event-Entity Information" # {0} entry name
+editor-entry-unlock-event-entity-name: "&aEdit Entry Unlock Condition-Event-Entity Information"
+editor-entry-unlock-event-entity-lore:
+  - "&aClick to edit the entry's entity information"
+  - "&aThe event type must be &centity_kill"
+  - "&aUnlocking this entry requires triggering the corresponding event"
+editor-entry-unlock-event-entity-name-hint: "&3Yu&bIllustration &7| &aEnter the new entity name"
+editor-entry-unlock-event-entity-name-name: "&aCurrent Entity Name: {0}" # {0} entity name
+editor-entry-unlock-event-entity-name-lore:
+  - "&aClick to edit the entity name"
+editor-entry-unlock-event-entity-amount-name: "&aCurrent Entity Amount: {0}" # {0} entity amount
+editor-entry-unlock-event-entity-amount-lore:
+  - "&aClick to edit the entity amount"
+editor-entry-unlock-event-entity-amount-hint: "&3Yu&bIllustration &7| &aEnter the new entity amount, must be a non-negative number greater than 0!"
+editor-entry-unlock-event-entity-amount-failed:
+  - "&3Yu&bIllustration &7| &e{0} &cis not a valid entity amount!" # {0} entered entity amount
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&nClick here] &ato reopen the editing interface"
+    args:
+      - hover: "&aReopen the editing interface"
+        command: "/yuillustration edit entry {1} {2} unlock event entity" # Do not modify this command
+# Edit entry unlock condition-event-waystone information
+editor-entry-unlock-event-waystone-title: "&0Edit &e{0} &0Unlock Condition-Event-Waystone Information" # {0} entry name
+editor-entry-unlock-event-waystone-name: "&aEdit Entry Unlock Condition-Event-Waystone Information"
+editor-entry-unlock-event-waystone-lore:
+  - "&aClick to edit the entry's waystone information"
+  - "&aUsing this condition requires the FancyWaystones plugin"
+  - "&aThe event type must be &cwaystone_active"
+  - "&aUnlocking this entry requires activating the corresponding waystone"
+editor-entry-unlock-event-waystone-name-name: "&aCurrent Waystone Name: {0}" # {0} waystone name
+editor-entry-unlock-event-waystone-name-lore:
+  - "&aClick to edit the waystone name"
+editor-entry-unlock-event-waystone-name-hint: "&3Yu&bIllustration &7| &aEnter the new waystone name"
+editor-entry-unlock-event-waystone-check-name: "&eFancyWaystones&a Hook Status: {0}" # {0} whether hooked
+editor-entry-unlock-event-waystone-check-lore-exists:
+  - "&aHooked, this function is enabled"
+editor-entry-unlock-event-waystone-check-lore-not-exists:
+  - "&cNot hooked, this function is disabled"
+  - "&cInstall &eFancyWaystones &cto enable this function"
+
+# Save icon
+editor-icon-save-name: "&aSave Icon to File"
+editor-icon-save-lore:
+  - "&aClick to save the icon"
+  - "&cMust save after modifications to synchronize!"
+editor-icon-save-success: "&3Yu&bIllustration &7| &aSuccessfully saved &e{0} &a's icon!" # {0} icon name
+editor-entry-save-success: "&3Yu&bIllustration &7| &aSuccessfully saved entry: &e{0} &a!" # {0} entry name
+
+editor-category-not-exist: "&3Yu&bIllustration &7| &cCategory &e{0} &cdoes not exist!" # {0} category name
+editor-entry-not-exist: "&3Yu&bIllustration &7| &cCategory &e{0} &cdoes not contain entry &e{1} &c!" # {0} category name {1} entry name

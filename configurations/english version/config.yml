@@ -1,0 +1,47 @@
+#  ______   ___    ___                     __                   __
+# /\__  _\ /\_ \  /\_ \                   /\ \__               /\ \__  __
+# \/_/\ \/ \//\ \ \//\ \    __  __    ____\ \ ,_\  _ __    __  \ \ ,_\/\_\     ___     ___
+#    \ \ \   \ \ \  \ \ \  /\ \/\ \  /',__\\ \ \/ /\`'__\/'__`\ \ \ \/\/\ \   / __`\ /' _ `\
+#     \_\ \__ \_\ \_ \_\ \_\ \ \_\ \/\__, `\\ \ \_\ \ \//\ \L\.\_\ \ \_\ \ \ /\ \L\ \/\ \/\ \
+#     /\_____\/\____\/\____\\ \____/\/\____/ \ \__\\ \_\\ \__/.\_\\ \__\\ \_\\ \____/\ \_\ \_\
+#     \/_____/\/____/\/____/ \/___/  \/___/   \/__/ \/_/ \/__/\/_/ \/__/ \/_/ \/___/  \/_/\/_/
+#                                     Author. L1An
+
+Database:
+  # MYSQL, SQLITE
+  Method: SQLITE
+  SQL:
+    host: localhost
+    port: 3306
+    user: root
+    password: root
+    database: minecraft
+
+settings:
+  # The match type of the item name
+  # strict, fuzzy, default strict
+  match-type: strict
+
+# Custom placeholders(deprecated after 1.1.0)
+placeholder:
+  bar:
+    # blank fill character
+    empty: '§7|'
+    # fill character
+    fill: '§a|'
+    # progress bar length
+    length: 20
+  isunlocked:
+    true: '§a✔ Unlocked'
+    false: '§c✘ Locked'
+
+# DO NOT DELETE
+icon:
+  no-next-icon:
+    material: BARRIER
+    name: '&cNo next page'
+    custom-model-data: 10001
+  no-previous-icon:
+    material: BARRIER
+    name: '&cNo previous page'
+    custom-model-data: 10001

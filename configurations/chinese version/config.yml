@@ -1,0 +1,48 @@
+#  ______   ___    ___                     __                   __
+# /\__  _\ /\_ \  /\_ \                   /\ \__               /\ \__  __
+# \/_/\ \/ \//\ \ \//\ \    __  __    ____\ \ ,_\  _ __    __  \ \ ,_\/\_\     ___     ___
+#    \ \ \   \ \ \  \ \ \  /\ \/\ \  /',__\\ \ \/ /\`'__\/'__`\ \ \ \/\/\ \   / __`\ /' _ `\
+#     \_\ \__ \_\ \_ \_\ \_\ \ \_\ \/\__, `\\ \ \_\ \ \//\ \L\.\_\ \ \_\ \ \ /\ \L\ \/\ \/\ \
+#     /\_____\/\____\/\____\\ \____/\/\____/ \ \__\\ \_\\ \__/.\_\\ \__\\ \_\\ \____/\ \_\ \_\
+#     \/_____/\/____/\/____/ \/___/  \/___/   \/__/ \/_/ \/__/\/_/ \/__/ \/_/ \/___/  \/_/\/_/
+#                                     Author. L1An
+
+Database:
+  # MYSQL, SQLITE
+  Method: SQLITE
+  SQL:
+    host: localhost
+    port: 3306
+    user: root
+    password: root
+    database: minecraft
+
+settings:
+  # 物品名匹配方式
+  # 可选strict, fuzzy, 默认strict
+  match-type: strict
+
+# 自定义占位符
+placeholder:
+  bar:
+    # 空白填充字符
+    empty: '§7|'
+    # 填充字符
+    fill: '§a|'
+    # 进度条长度
+    length: 20
+  isunlocked:
+    true: '§a✔ 已解锁'
+    false: '§c✘ 未解锁'
+
+# 请勿删除
+icon:
+  # 无法使用变量
+  no-next-icon:
+    material: BARRIER
+    name: '&c没有下一页了'
+    custom-model-data: 10001
+  no-previous-icon:
+    material: BARRIER
+    name: '&c没有上一页了'
+    custom-model-data: 10001

@@ -1,0 +1,46 @@
+# You can find the english version example file in GitHub or spigotmc.org
+
+title: "智慧之书 | 默认分类"
+# 必填，类别的唯一识别id
+category: "default"
+
+# 抽象字符布局
+# @始终代表填充为图鉴类别的icon，若不存在则不会显示图鉴类别在main中
+# 图鉴条目会展示在@对应的格子中
+# layout的行数代表了gui的行数，最大不能超过6行
+layout:
+  - "####SB###"
+  - "#@@@@@@@#"
+  - "#@@@@@@@#"
+  - "#@@@@@@@#"
+  - "P@@@@@@@N"
+  - "####M####"
+
+# 以下的icon都是可以全自定义的
+icon:
+  '#':
+    type: normal
+    material: BLACK_STAINED_GLASS_PANE
+    name: ' '
+  S:
+    material: SKULL
+    name: '{player_name}'
+    lore:
+      - '&a个人信息'
+  B:
+    material: NAME_TAG
+    name: '解锁进度'
+    lore:
+      - '{bar-default} &a{unlocked-default}&f/&a{count-default}'
+  N:
+    type: next
+    material: ARROW
+    name: '下一页'
+  P:
+    type: previous
+    material: ARROW
+    name: '上一页'
+  M:
+    type: main
+    material: ARROW
+    name: '返回主页面'

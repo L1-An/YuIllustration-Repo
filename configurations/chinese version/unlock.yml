@@ -1,0 +1,11 @@
+# 默认支持的变量:
+# {entry} - 条目名称
+# {category} - 类别名称
+unlock-card:
+  material: PAPER
+  name: "&6解锁卡 - {entry}"
+  lore:
+    - "&7用于解锁 &e{category} &7类别的物品"
+    - "&a手持该解锁卡后按下右键解锁"
+  shiny: false
+  custom-model-data: 10001

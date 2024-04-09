@@ -1,0 +1,68 @@
+# Unique identifier of this entry, do not duplicate in a same category
+example:
+  # category of this entry, default is default
+  category: default
+  # whether to show in the ui when it has not been unlocked
+  show: true
+  # the icon of this entry show in the ui, must be existed
+  icon:
+    name: "&6example"
+    material: WOODEN_SWORD
+    custom-model-data: 10001
+    shiny: true
+    lore:
+      - "&7This is an example item."
+  # if the unlock section does not exist, it will be considered as unlocked
+  unlock:
+    # the type of unlock, optional values are: item/event/both/none
+    # item - unlock after pickup the item with the specified name or lore
+    # event - unlock after the specified event is triggered
+    # both - unlock after both item and event are satisfied
+    # none - unlock immediately
+    type: item
+    item:
+      name: "example" # with the specified name of the item
+      # with the specified lore of the item, can be multiple
+      lore:
+      - "example"
+      consume: false # whether to consume the item
+    event:
+      # built-in event types:
+      # player-join: when player join
+      # player-quit: when player quit
+      # entity-kill: when entity killed
+      # waystone-active: when waystone activated(compat with FancyWaystones)
+      # craft-item: when craft item
+      # interact-item: when right-interact with item
+      type: "entity-kill" # event type
+      # when type is entity-kill, this field is valid
+      entity-info:
+        name: "exampleMob" # name of the entity, ignore the color code
+        amount: 10 # when kill enough amount of the entity, default to 1, if 0, it will be 1
+      # when the type is waystone-active, this field is valid
+      waystone-name: "exampleWaystone" # name of the waystone
+      # when the type is craft-item/interact-item, this field is valid
+      item:
+        name: "example"
+        lore:
+          - "example"
+        consume: false # whether to consume the item
+  # after unlock, the reward will be triggered
+  reward:
+    # kether script，can be found the script list in https://kether.tabooproject.org/list.html, but there isn't an English version
+    # please check the common script in wiki: https://l1-an.github.io/YusDoc/en/docs/MinecraftPlugins/YuIllustration/Basic%20Document/kether
+    # or you can ask for help in the discord server: https://discord.gg/SzPBHGttaR
+    content: |-
+      command inline "give {{ sender }} diamond 1" as op
+      tell color inline "&aYou have unlocked a entry named &e{{ &entry }}!"
+    compat:
+      # the reward of mmocore
+      mmocore:
+        enable: true # whether to enable
+        attribute: "strength" # name of the attribute, default to strength
+        amount: 1 # amount of the attribute, default to 1
+      # the reward of mythiclib
+      mythiclib:
+        enable: true # whether to enable
+        attribute: "damage" # name of the attribute, default to damage
+        amount: 1 # amount of the attribute, default to 1

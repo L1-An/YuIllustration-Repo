@@ -1,0 +1,44 @@
+# You can find english version example file in GitHub or spigotmc.org
+
+title: "智慧之书"
+
+# 抽象字符布局
+# @始终代表填充为图鉴类别的icon，若不存在则不会显示图鉴类别在main中
+# layout的行数代表了gui的行数，最大不能超过6行
+layout:
+  - "####S####"
+  - "#P@#@#@N#"
+  - "####B####"
+
+# 以下的icon都是可以全自定义的
+# icon-x x代表layout中的字符，注意x只有一个字符，否则将会错误读取
+# type 代表图标类型，有normal, previous, next，不填则默认为normal
+# normal - 普通图标，自定义图标
+# previous - 上一页图标
+# next - 下一页图标
+icon:
+  '#':
+    type: normal
+    # 支持模糊解析，例如有拼写错误一般也可以解析出来
+    material: BLACK_STAINED_GLASS_PANE
+    name: ' '
+  S:
+    material: SKULL
+    # 物品是否发光
+    shiny: true
+    name: '{player_name}'
+    lore:
+      - '&a个人信息'
+  B:
+    material: NAME_TAG
+    name: '总解锁进度'
+    lore:
+      - '{bar-total} &a{unlocked-total}&f/&a{count-total}'
+  N:
+    type: next
+    material: ARROW
+    name: '下一页'
+  P:
+    type: previous
+    material: ARROW
+    name: '上一页'

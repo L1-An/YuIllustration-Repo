@@ -1,0 +1,377 @@
+# 由ChatGPT翻譯，如有錯誤請諒解
+# 若您想爲翻譯做出貢獻，請聯係我或直接提交PR
+
+command-reload: "&3Yu&bIllustration &7| &a重載成功！"
+command-not-player: "&3Yu&bIllustration &7| &c該指令僅玩家可用！"
+load-category: "&3Yu&bIllustration &7| &a已成功加載 &e{0} &a個類別！" # {0} 類別數量
+load-entry: "&3Yu&bIllustration &7| &a已成功加載 &e{0} &a個條目！" # {0} 條目數量
+match-type: "&3Yu&bIllustration &7| &a當前物品名稱匹配模式: &e{0}" # {0} 匹配模式
+
+player-not-found: "&3Yu&bIllustration &7| &c未找到玩家: &e{0} &c!" # {0} 玩家名稱
+player-get-unlock-card: "&3Yu&bIllustration &7| &a你獲得了 &e{0} &a类别中 &e{1} &a條目的解鎖卡！" # {0} 類別名稱 {1} 條目名稱
+
+category-file-not-found: "&3Yu&bIllustration &7| &c未找到類別 &e{0} 對應的ui文件! 已在gui/category文件夾自動創建默認ui文件" # {0} 類別名稱
+category-not-found: "&3Yu&bIllustration &7| &c未找到類別: &e{0} &c!" # {0} 類別名稱
+
+entry-unlock: "&3Yu&bIllustration &7| &e{0} &a類的 &e{1} &a條目已解鎖！" # {0} 類別名稱 {1} 條目名稱
+entry-deunlock: "&3Yu&bIllustration &7| &e{0} &a類的 &e{1} &a條目已取消解鎖！" # {0} 類別名稱 {1} 條目名稱
+entry-already-unlock: "&3Yu&bIllustration &7| &e{0} &a類的 &e{1} &a條目已經解鎖過了！" # {0} 條目名稱
+entry-not-unlock: "&3Yu&bIllustration &7| &e{0} &a類的 &e{1} &a條目尚未解鎖！" # {0} 類別名稱 {1} 條目名稱
+entry-not-found: "&3Yu&bIllustration &7| &c在 &e{0} &c類中未找到條目: &e{1} &c!" # {0} 類別名稱 {1} 條目名稱
+
+api-file-createui-success: "&3Yu&bIllustration &7| &a已創建類別 &e{0} &a對應的ui文件" # {0} 類別名稱
+api-file-createui-exists: "&3Yu&bIllustration &7| &c類別 &e{0} &c對應的ui文件已存在! 取消創建!" # {0} 類別名稱
+
+# 以下是editor的語言文件
+
+editor-main-title: "&0編輯器主頁"
+editor-previous-page: "&a上一頁"
+editor-no-previous-page: "&c沒有上一頁了"
+editor-next-page: "&a下一頁"
+editor-no-next-page: "&c沒有下一頁了"
+editor-back: "&a返回"
+editor-back-lore:
+  - "&a點擊以返回上一頁"
+editor-delete: "&c刪除"
+editor-delete-lore:
+  - "&c點擊以刪除"
+  - "&c刪除後無法恢復!"
+editor-delete-lore-category:
+  - " "
+  - "&c會將該類別下所有的條目一起刪除!"
+editor-delete-success: "&3Yu&bIllustration &7| &a成功刪除 &e{0} &a!" # {0} 刪除的內容
+no-match-item: "&3Yu&bIllustration &7| &c未找到匹配的物品!"
+
+editor-create-category: "&a創建新類別"
+editor-create-category-lore:
+  - "&a點擊以創建新的類別"
+  - "&a將會自動創建對應的ui文件"
+editor-create-category-sign:
+  - " "
+  - "&a在第一行輸入類別名稱"
+  - "&c建議使用英文"
+  - "&a輸入後點擊完成以創建"
+editor-category-icon-default-lore:
+  - "&a點擊以進入編輯"
+editor-create-category-success: "&3Yu&bIllustration &7| &a成功創建新類別: &e{0}" # {0} 類別名稱
+editor-create-category-failed:
+  - "&3Yu&bIllustration &7| &c類別 &e{0} &c已存在或輸入的內容為空!" # {0} 類別名稱
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&n點擊此處] &a以重新打開編輯界面"
+    args:
+      - hover: "&a重新打開編輯界面"
+        command: "/yuillustration edit"
+
+editor-category-title: "&0編輯類別: &e{0}" # {0} 類別名稱
+editor-category-edit-name: "&a編輯類別圖標"
+editor-category-edit-lore:
+  - "&a點擊以編輯該類別的圖標"
+editor-create-entry: "&a創建新條目"
+editor-create-entry-lore:
+  - "&a點擊以創建新的條目"
+editor-create-entry-sign:
+  - " "
+  - "在第一行輸入條目名稱"
+  - "建議使用英文"
+  - "輸入後點擊完成以創建"
+editor-entry-icon-default-lore:
+  - "&a點擊以進入編輯"
+editor-create-entry-success: "&3Yu&bIllustration &7| &a成功創建新條目: &e{0}" # {0} 條目名稱
+editor-create-entry-failed:
+  - "&3Yu&bIllustration &7| &c條目 &e{0} &c已存在或輸入的內容為空!" # {0} 條目名稱
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&n點擊此處] &a以重新打開編輯界面"
+    args:
+      - hover: "&a重新打開編輯界面"
+        command: "/yuillustration edit category {1}"
+category-reward-name: "&a編輯類別獎勵"
+category-reward-lore:
+  - "&a點擊以編輯該類別的獎勵信息"
+  - "&b當完成該類別的所有條目解鎖後將會執行該獎勵"
+category-reward-hint: "&3Yu&bIllustration &7| &a請在書中輸入新的獎勵腳本"
+category-reward-book-name: "&a修改獎勵腳本內容: &e{0}" # {0} 類別名稱
+
+# 條目編輯界面
+editor-entry-title: "&0編輯條目: &e{0}" # {0} 條目名稱
+
+# 類別圖標編輯界面
+editor-category-icon-title: "&0編輯 &e{0} &0類別的圖標" # {0} 類別名稱
+# 編輯圖標材質
+editor-icon-edit-material-name: "&a當前材質: {0}" # {0} 材質名稱
+editor-icon-edit-material-lore:
+  - "&a點擊以編輯圖標材質"
+editor-icon-edit-material-hint: "&3Yu&bIllustration &7| &a請輸入新的圖標材質"
+editor-icon-edit-material-failed:
+  - "&3Yu&bIllustration &7| &c未找到匹配的物品!"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&n點擊此處] &a以重新打開編輯界面"
+    args:
+      - hover: "&a重新打開編輯界面"
+        command: "/yuillustration edit category icon {0}"
+# 編輯圖標名稱
+editor-icon-edit-name-name: "&a當前名稱: {0}" # {0} 圖標名稱
+editor-icon-edit-name-lore:
+  - "&a點擊以編輯圖標名稱"
+editor-icon-edit-name-hint: "&3Yu&bIllustration &7| &a請輸入新的圖標名稱"
+# 編輯圖標lore
+editor-icon-edit-lore-name: "&a編輯圖標描述"
+editor-icon-edit-lore-empty:
+  - "&a當前lore為空"
+  - "&a點擊以編輯圖標描述"
+editor-icon-edit-lore-hint: "&3Yu&bIllustration &7| &a請在書中輸入新的圖標描述"
+editor-icon-edit-lore-book-name: "&a修改描述: &e{0}" # {0} 圖標名稱
+# 編輯圖標是否閃爍
+editor-icon-edit-shiny-name: "&a圖標是否閃爍: {0}"
+editor-icon-edit-shiny-lore:
+  - "&a點擊以切換圖標是否閃爍"
+# 編輯圖標的CustomModelData
+editor-icon-edit-cmd-name: "&a圖標的CustomModelData: {0}" # {0} CustomModelData
+editor-icon-edit-cmd-lore:
+  - "&a點擊以編輯圖標的CustomModelData"
+editor-icon-edit-cmd-hint: "&3Yu&bIllustration &7| &a請輸入新的CustomModelData, 必須是非負數字!"
+editor-icon-edit-cmd-failed:
+  - "&3Yu&bIllustration &7| &e{0} &c不是一個合法的CustomModelData!" # {0} 輸入的CustomModelData
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&n點擊此處] &a以重新打開編輯界面"
+    args:
+      - hover: "&a重新打開編輯界面"
+        command: "/yuillustration edit category icon {1}" # 請勿修改此處的命令
+editor-entry-icon-edit-cmd-failed:
+  - "&3Yu&bIllustration &7| &e{0} &c不是一個合法的CustomModelData!" # {0} 輸入的CustomModelData
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&n點擊此處] &a以重新打開編輯界面"
+    args:
+      - hover: "&a重新打開編輯界面"
+        command: "/yuillustration edit entry {1} {2}" # 請勿修改此處的命令
+# 編輯圖標是否show
+editor-icon-edit-show-name: "&a圖標是否顯示: {0}"
+editor-icon-edit-show-lore:
+  - "&a點擊以切換圖標是否顯示"
+# 編輯條目的分類
+editor-entry-category-title: "&0編輯 &e{0} &0的分類" # {0} 條目名稱
+editor-icon-edit-category-name: "&a分類: {0}" # {0} 分類名稱
+editor-icon-edit-category-lore:
+  - "&a點擊以編輯圖標的分類"
+editor-icon-edit-category-add-lore:
+  - "&a點擊以將圖標切換到該分類"
+# 編輯條目的獎勵信息
+editor-entry-reward-title: "&0編輯 &e{0} &0的獎勵" # {0} 條目名稱
+editor-icon-edit-reward-name: "&a編輯條目獎勵"
+editor-icon-edit-reward-lore:
+  - "&a點擊以編輯圖標的獎勵信息"
+# 編輯條目的解鎖信息
+editor-entry-unlock-title: "&0編輯 &e{0} &0的解鎖條件" # {0} 條目名稱
+editor-icon-edit-unlock-name: "&a編輯條目解鎖條件"
+editor-icon-edit-unlock-lore:
+  - "&a點擊以編輯圖標的解鎖條件"
+# 編輯條目的獎勵腳本信息
+editor-entry-reward-script-name: "&a編輯條目獎勵-腳本"
+editor-entry-reward-script-lore:
+  - "&a點擊以編輯"
+  - "&a當前腳本:"
+  - " "
+editor-entry-reward-script-hint: "&3Yu&bIllustration &7| &a請在書中輸入新的獎勵腳本"
+editor-entry-reward-script-book-name: "&a修改腳本內容: &e{0}" # {0} 條目名稱
+# 編輯條目的獎勵兼容信息
+editor-entry-reward-compat-title: "&0編輯 &e{0} &0其他插件支持的獎勵" # {0} 條目名稱
+editor-entry-reward-compat-name: "&a編輯條目獎勵-其他插件支持獎勵"
+editor-entry-reward-compat-lore:
+  - "&a點擊以編輯條目的其他插件支持獎勵"
+# 編輯條目獎勵兼容-MMOCore
+editor-entry-reward-compat-mmocore-title: "&0編輯 &e{0} &0的MMOCore獎勵" # {0} 條目名稱
+editor-entry-reward-compat-mmocore-name: "&a編輯條目獎勵-MMOCore"
+editor-entry-reward-compat-mmocore-lore:
+  - "&a點擊以編輯條目的MMOCore屬性獎勵"
+  - "&a解鎖該條目後將會提供一定數量的MMOCore屬性值作為獎勵"
+# 编辑條目獎勵兼容-MMOCore已兼容
+editor-entry-reward-compat-mmocore-check-name: "&eMMOCore&a掛鉤狀態: {0}" # {0} 是否已掛鉤
+editor-entry-reward-compat-mmocore-check-lore-exists:
+  - "&a已掛鉤，該功能已正常啟用"
+editor-entry-reward-compat-mmocore-check-lore-not-exists:
+  - "&c未掛鉤，該功能未啟用"
+  - "&c請安裝 &eMMOCore &c以啟用該功能"
+# 编辑條目獎勵兼容-MMOCore啟用狀態
+editor-entry-reward-compat-mmocore-enable-name: "&a啟用MMOCore獎勵: {0}" # {0} 是否已啟用
+editor-entry-reward-compat-mmocore-enable-lore:
+  - "&a點擊以切換MMOCore獎勵的啟用狀態"
+# 编辑條目獎勵兼容-MMOCore屬性名
+editor-entry-reward-compat-mmocore-attribute-name: "&a當前屬性名: {0}" # {0} 屬性名
+editor-entry-reward-compat-mmocore-attribute-lore:
+  - "&a點擊以編輯條目的MMOCore屬性名"
+editor-entry-reward-compat-mmocore-attribute-hint: "&3Yu&bIllustration &7| &a請輸入新的MMOCore屬性名"
+# 编辑條目獎勵兼容-MMOCore屬性值
+editor-entry-reward-compat-mmocore-amount-name: "&a當前屬性值: {0}" # {0} 屬性值
+editor-entry-reward-compat-mmocore-amount-lore:
+  - "&a點擊以編輯條目的MMOCore屬性值"
+editor-entry-reward-compat-mmocore-amount-hint: "&3Yu&bIllustration &7| &a請輸入新的MMOCore屬性值，必須是非負且大於0的數字!"
+editor-entry-reward-compat-mmocore-amount-failed:
+  - "&3Yu&bIllustration &7| &e{0} &c不是一個合法的MMOCore屬性值!" # {0} 輸入的MMOCore屬性值
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&n點擊此處] &a以重新打開編輯界面"
+    args:
+      - hover: "&a重新打開編輯界面"
+        command: "/yuillustration edit entry {1} {2} reward compat mmocore" # 請勿修改此處的命令
+# 编辑條目獎勵兼容-MMOCore屬性值
+editor-entry-reward-compat-mythiclib-title: "&0編輯 &e{0} &0的MythicLib獎勵" # {0} 條目名稱
+editor-entry-reward-compat-mythiclib-name: "&a編輯條目獎勵-MythicLib"
+editor-entry-reward-compat-mythiclib-lore:
+  - "&a點擊以編輯條目的MythicLib屬性獎勵"
+  - "&a解鎖該條目後將會提供一定數量的MythicLib屬性值作為獎勵"
+# 编辑條目獎勵兼容-MythicLib已兼容
+editor-entry-reward-compat-mythiclib-check-name: "&eMythicLib&a掛鉤狀態: {0}" # {0} 是否已掛鉤
+editor-entry-reward-compat-mythiclib-check-lore-exists:
+  - "&a已掛鉤，該功能已正常啟用"
+editor-entry-reward-compat-mythiclib-check-lore-not-exists:
+  - "&c未掛鉤，該功能未啟用"
+  - "&c請安裝 &eMythicLib &c以啟用該功能"
+# 编辑條目獎勵兼容-MythicLib啟用狀態
+editor-entry-reward-compat-mythiclib-enable-name: "&a啟用MythicLib獎勵: {0}" # {0} 是否已啟用
+editor-entry-reward-compat-mythiclib-enable-lore:
+  - "&a點擊以切換MythicLib獎勵的啟用狀態"
+# 编辑條目獎勵兼容-MythicLib屬性名
+editor-entry-reward-compat-mythiclib-attribute-name: "&a當前屬性名: {0}" # {0} 屬性名
+editor-entry-reward-compat-mythiclib-attribute-lore:
+  - "&a點擊以編輯條目的MythicLib屬性名"
+editor-entry-reward-compat-mythiclib-attribute-hint: "&3Yu&bIllustration &7| &a請輸入新的MythicLib屬性名"
+# 编辑條目獎勵兼容-MythicLib屬性值
+editor-entry-reward-compat-mythiclib-amount-name: "&a當前屬性值: {0}" # {0} 屬性值
+editor-entry-reward-compat-mythiclib-amount-lore:
+  - "&a點擊以編輯條目的MythicLib屬性值"
+editor-entry-reward-compat-mythiclib-amount-hint: "&3Yu&bIllustration &7| &a請輸入新的MythicLib屬性值，必須是非負且大於0的數字!"
+editor-entry-reward-compat-mythiclib-amount-failed:
+  - "&3Yu&bIllustration &7| &e{0} &c不是一個合法的MythicLib屬性值!" # {0} 輸入的MythicLib屬性值
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&n點擊此處] &a以重新打開編輯界面"
+    args:
+      - hover: "&a重新打開編輯界面"
+        command: "/yuillustration edit entry {1} {2} reward compat mythiclib" # 請勿修改此處的命令
+# 编辑條目解鎖條件類型
+editor-entry-unlock-type-name: "&a當前解鎖類型: {0}" # {0} 解鎖類型
+editor-entry-unlock-type-lore:
+  - "&a當前的條目解鎖類型："
+  - "{0}NONE - 不需要解鎖"
+  - "{1}ITEM - 拾起物品解鎖"
+  - "{2}EVENT - 觸發對應事件解鎖"
+  - "{3}BOTH - 兩者同時達成解鎖"
+# 编辑條目解鎖條件-物品
+editor-entry-unlock-item-title: "&0編輯 &e{0} &0的解鎖條件-物品" # {0} 條目名稱
+editor-entry-unlock-item-name: "&a編輯條目解鎖條件-物品"
+editor-entry-unlock-item-lore:
+  - "&a點擊以編輯條目的解鎖條件-物品"
+  - "&a解鎖該條目需要拾起對應物品"
+# 编辑條目解鎖條件-物品名稱
+editor-entry-unlock-item-name-name: "{0}" # {0} 物品名稱
+editor-entry-unlock-item-name-lore:
+  - "&a點擊以編輯物品名稱"
+editor-entry-unlock-item-name-hint: "&3Yu&bIllustration &7| &a請輸入新的物品名稱"
+# 编辑條目解鎖條件-物品lore
+editor-entry-unlock-item-lore-name: "&a編輯物品lore"
+editor-entry-unlock-item-lore-empty:
+  - "&a當前lore為空"
+  - "&a點擊以編輯圖標描述"
+editor-entry-unlock-item-lore-hint: "&3Yu&bIllustration &7| &a請在書中輸入新的物品lore"
+editor-entry-unlock-item-lore-book: "&a修改物品解鎖條件描述: &e{0}" # {0} 圖標名稱
+editor-entry-unlock-item-consume-name: "&a物品是否消耗: {0}" # {0} 是否消耗
+editor-entry-unlock-item-consume-lore:
+  - "&a點擊以切換物品是否消耗"
+# 编辑條目解鎖條件-事件
+editor-entry-unlock-event-title: "&0編輯 &e{0} &0的解鎖條件-事件" # {0} 條目名稱
+editor-entry-unlock-event-name: "&a編輯條目解鎖條件-事件"
+editor-entry-unlock-event-lore:
+  - "&a點擊以編輯條目的解鎖條件-事件"
+  - "&a解鎖該條目需要觸發對應事件"
+# 编辑條目解鎖條件-事件類型
+editor-entry-unlock-event-type-name: "&a當前事件類型: {0}" # {0} 事件類型
+editor-entry-unlock-event-type-lore:
+  - "&a點擊以編輯事件類型"
+editor-entry-unlock-event-type-hint:
+  - "&3Yu&bIllustration &7| &a請輸入新的事件類型, 當前的類型為: {0}" # {0} 事件類型
+  - "&3Yu&bIllustration &7| &a可選的事件類型有:"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&bplayer_join]&a: 玩家加入事件"
+    args:
+      - hover: "&7點擊以複製"
+        suggest: "player_join"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&bplayer_quit]&a: 玩家離開事件"
+    args:
+      - hover: "&7點擊以複製"
+        suggest: "player_quit"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&bentity_kill]&a: 實體死亡事件(擊殺怪物事件)"
+    args:
+      - hover: "&7點擊以複製"
+        suggest: "entity_kill"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&bwaystone_active]&a: 激活傳送石事件"
+    args:
+      - hover: "&7點擊以複製"
+        suggest: "waystone_active"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&bcraft_item]&a: 合成物品事件"
+    args:
+      - hover: "&7点击以复制"
+        suggest: "craft_item"
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&binteract_item]&a: 點擊物品事件"
+    args:
+      - hover: "&7点击以复制"
+        suggest: "interact_item"
+editor-entry-unlock-event-type-failed:
+  - "&3Yu&bIllustration &7| &e{0} &c不是一個合法的事件類型!" # {0} 輸入的事件類型
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&n點擊此處] &a以重新打開編輯界面"
+    args:
+      - hover: "&a重新打開編輯界面"
+        command: "/yuillustration edit entry {1} {2} unlock event" # 請勿修改此處的命令
+# 编辑條目解鎖條件-事件-實體信息
+editor-entry-unlock-event-entity-title: "&0編輯 &e{0} &0的解鎖條件-事件-實體信息" # {0} 條目名稱
+editor-entry-unlock-event-entity-name: "&a編輯條目解鎖條件-事件-實體信息"
+editor-entry-unlock-event-entity-lore:
+  - "&a點擊以編輯條目的實體信息"
+  - "&a需要事件類型為&c entity_kill"
+  - "&a解鎖該條目需要觸發對應事件"
+editor-entry-unlock-event-entity-name-hint: "&3Yu&bIllustration &7| &a請輸入新的實體名稱"
+editor-entry-unlock-event-entity-name-name: "&a當前實體名稱: {0}" # {0} 實體名稱
+editor-entry-unlock-event-entity-name-lore:
+  - "&a點擊以編輯實體名稱"
+editor-entry-unlock-event-entity-amount-name: "&a當前實體數量: {0}" # {0} 實體數量
+editor-entry-unlock-event-entity-amount-lore:
+  - "&a點擊以編輯實體數量"
+editor-entry-unlock-event-entity-amount-hint: "&3Yu&bIllustration &7| &a請輸入新的實體數量，必須是非負且大於0的數字!"
+editor-entry-unlock-event-entity-amount-failed:
+  - "&3Yu&bIllustration &7| &e{0} &c不是一個合法的實體數量!" # {0} 輸入的實體數量
+  - type: JSON
+    text: "&3Yu&bIllustration &7| [&b&n點擊此處] &a以重新打開編輯界面"
+    args:
+      - hover: "&a重新打開編輯界面"
+        command: "/yuillustration edit entry {1} {2} unlock event entity" # 請勿修改此處的命令
+# 编辑條目解鎖條件-事件-傳送石信息
+editor-entry-unlock-event-waystone-title: "&0編輯 &e{0} &0的解鎖條件-事件-傳送石信息" # {0} 條目名稱
+editor-entry-unlock-event-waystone-name: "&a編輯條目解鎖條件-事件-傳送石信息"
+editor-entry-unlock-event-waystone-lore:
+  - "&a點擊以編輯條目的傳送石信息"
+  - "&a使用該條件需要安裝插件 &eFancyWaystones"
+  - "&a需要事件類型為&c waystone_active"
+  - "&a解鎖該條目需要激活對應傳送石"
+editor-entry-unlock-event-waystone-name-name: "&a當前傳送石名稱: {0}" # {0} 傳送石名稱
+editor-entry-unlock-event-waystone-name-lore:
+  - "&a點擊以編輯傳送石名稱"
+editor-entry-unlock-event-waystone-name-hint: "&3Yu&bIllustration &7| &a請輸入新的傳送石名稱"
+editor-entry-unlock-event-waystone-check-name: "&eFancyWaystones&a掛鉤狀態: {0}" # {0} 是否已掛鉤
+editor-entry-unlock-event-waystone-check-lore-exists:
+  - "&a已掛鉤，該功能已正常啟用"
+editor-entry-unlock-event-waystone-check-lore-not-exists:
+  - "&c未掛鉤，該功能未啟用"
+  - "&c請安裝 &eFancyWaystones &c以啟用該功能"
+
+# 保存圖標
+editor-icon-save-name: "&a保存圖標到文件"
+editor-icon-save-lore:
+  - "&a點擊以保存圖標"
+  - "&c修改完成後必須要保存才能同步!"
+editor-icon-save-success: "&3Yu&bIllustration &7| &a成功保存 &e{0} &a的圖標!" # {0} 圖標名稱
+editor-entry-save-success: "&3Yu&bIllustration &7| &a成功保存條目: &e{0} &a!" # {0} 條目名稱
+
+editor-category-not-exist: "&3Yu&bIllustration &7| &c類別 &e{0} &c不存在!" # {0} 類別名稱
+editor-entry-not-exist: "&3Yu&bIllustration &7| &c類別 &e{0} &c中不存在條目 &e{1} &c!" # {0} 類別名稱 {1} 條目名稱

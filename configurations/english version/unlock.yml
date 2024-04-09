@@ -1,0 +1,11 @@
+# Default variables:
+# {entry} - name of the entry
+# {category} - name of the category
+unlock-card:
+  material: PAPER
+  name: "&6Unlock card - {entry}"
+  lore:
+    - "&7For unlocking &e{category} &7category item"
+    - "&aHand this card and right click to unlock"
+  shiny: false
+  custom-model-data: 10001

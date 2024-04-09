@@ -1,0 +1,38 @@
+title: "Illustration"
+
+# abstract character layout
+# @ always represents the icon of the illustration category
+# the rows of the layout represent the rows of the gui, and the maximum cannot exceed 6 rows
+layout:
+  - "####S####"
+  - "#P@#@#@N#"
+  - "####B####"
+
+# all icon can be fully customized
+icon:
+  # unique character of the icon
+  # !!!must be one character!!!
+  '#':
+    type: normal # the type of the icon, optional values are: normal/next/previous
+    material: BLACK_STAINED_GLASS_PANE
+    name: ' '
+  S:
+    material: SKULL
+    # whether to show the shiny effect
+    shiny: true
+    name: '{{ player name }}'
+    lore:
+      - '&aPersonal Information'
+  B:
+    material: NAME_TAG
+    name: 'Total Unlock Progress'
+    lore:
+      - '{{ bar total }} &a{{ unlocked total }}&f/&a{{ count total }}'
+  N:
+    type: next
+    material: ARROW
+    name: 'Next page'
+  P:
+    type: previous
+    material: ARROW
+    name: 'Previous page'
